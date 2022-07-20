@@ -114,7 +114,7 @@ main {
     margin-top: 20px;
     padding: 13px;
     text-decoration: none;
-    color: black;
+    color: rgb(0 18 22 / 98%);
     background-color: rgb(250, 252, 252);
     display: block;
     border: 1px none salmon;
@@ -139,7 +139,7 @@ main {
     height: 280px;
     width: auto;
     text-align: center;
-    background-color: #c6cfcf;
+    background-color: #cec7ad14;
 
 }
 
