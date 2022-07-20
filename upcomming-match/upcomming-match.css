@@ -1,0 +1,224 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* body */
+body {
+    background-color: rgb(253, 249, 249);
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.first-section {
+    background-color: rgba(0, 0, 0, 0.912);
+    border-radius: 20px;
+}
+
+.trophy img {
+    height: 100px;
+    width: 100px;
+    margin: 10px 10px 0px 10px;
+    padding-bottom: 0px;
+    border-radius: 50px;
+}
+
+.section-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    height: 360px;
+    margin-bottom: 30px;
+}
+
+.half-width {
+    width: 90%;
+    height: 108%;
+
+    padding-left: 55px;
+
+}
+
+.half-width img {
+    width: 78%;
+    height: 93.8%;
+}
+
+.Fifa {
+    color: white;
+    width: 80%;
+    height: 80%;
+}
+
+.Fifa-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: unset;
+    margin-bottom: 0px;
+}
+
+.Fifa-info {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+.live-show-link a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*-------- Second secton start from here----- */
+.second-section {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-column-gap: 5px;
+
+}
+
+/*----------------- Side nav bar start */
+.menu {
+    margin-top: 4px;
+    height: 238.5px;
+    background: rgb(30, 1, 1);
+    border-radius: 10px;
+}
+
+.side-nav {
+    width: 238px;
+    text-align: center;
+
+}
+
+
+
+.side-nav a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: ;
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 13px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(250, 252, 252);
+    display: block;
+    border: 1px none salmon;
+    border-radius: 10px;
+}
+
+.side-nav a:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+/*------------------ Nav bar is end */
+.all-blogs {
+    margin-top: -px;
+    padding-bottom: 50px;
+}
+
+.blog {
+    border: 1px solid rgb(215, 214, 214);
+    margin: 4px;
+    border-radius: 10px;
+    height: 280px;
+    width: auto;
+    text-align: center;
+    background-color: #c6cfcf;
+
+}
+
+.images {
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blogs .images {
+    display: flex;
+    text-align: ;
+    width: 240px;
+
+}
+
+.blog img {
+    width: 80px;
+}
+
+.blog-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: rgb(66, 63, 63);
+}
+
+.icons {
+    display: flex;
+
+}
+
+.icon {
+    padding-left: 20px;
+}
+
+.all-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 4px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 300px;
+}
+
+.fotter-section {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.goal {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.fotter-section a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 4px;
+    margin: 0px 10px;
+    color: rgb(167, 163, 163);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.span {
+    padding-top: 50px;
+}
+
+.contact span {
+    padding: 4px;
+    font-size: 20px;
+
+}
