@@ -304,7 +304,7 @@ footer {
 
     .section-details {
         grid-template-columns: repeat(1, 0fr);
-        height: 550px;
+        height: 570px;
         width: 100%;
         justify-content: center;
     }

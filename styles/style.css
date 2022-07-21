@@ -365,7 +365,7 @@ footer {
 /* -------------Media Query for Tablet ---------------- */
 @media only screen and (min-width:688px) and (max-width:912px) {
     main {
-        width: 80%;
+        width: 100%;
     }
 
     @keyframes slider {
@@ -402,8 +402,10 @@ footer {
 
     .first-section {
         background-color: rgb(4, 35, 35);
-        width: 100%;
+        width: 90%;
         height: 385px;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .half-width {
