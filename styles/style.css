@@ -85,7 +85,6 @@ main {
 
 .half-width {
     width: 100%;
-    /* padding-left: 55px; */
 
 }
 
@@ -164,8 +163,10 @@ main {
 }
 
 .side-nav a:hover {
-    background-color: darkcyan;
+    background-color: rgba(5, 128, 128, 0.955);
     color: white;
+    box-shadow: 2px 20px 10px rgba(8, 81, 95, 0.644);
+    border-bottom: 1px solid rgb(246, 234, 0);
 }
 
 /*------------------ Nav bar is end */
@@ -212,6 +213,22 @@ main {
     grid-row-gap: 4px;
 }
 
+.view {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.view a {
+    width: 500px;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-color: rgb(3, 40, 53);
+    box-shadow: 2px 20px 10px rgba(8, 81, 95, 0.644);
+    color: white;
+    font-size: 16px;
+}
+
 footer {
     background-color: black;
     width: 100%;
@@ -251,34 +268,48 @@ footer {
 
 /* -------------Media Query for Mobile---------------- */
 @media only screen and (max-width:688px) {
+
+    /* main-style */
     main {
         width: 100%;
     }
 
+    /* Ffrist section media query */
     .first-section {
         background-color: rgb(4, 35, 35);
-        width: 100%;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .section-details {
         grid-template-columns: repeat(1, 0fr);
-        height: 100%;
+        height: 550px;
         width: 100%;
         text-align: center;
         justify-content: center;
     }
 
     .Fifa {
-        width: 100%;
-        height: 100%;
+        width: 190px;
+        height: 90%;
+    }
+
+    .Fifa-title {
+        font-size: 20px;
     }
 
     .half-width {
         padding-left: 0px;
         height: 100%;
-        width: 100%;
+        width: 90%;
     }
 
+    .half-width img {
+        height: 230px;
+    }
+
+    /* second section media query */
     .second-section {
         display: grid;
         grid-template-columns: repeat(1, 0fr);
@@ -304,6 +335,10 @@ footer {
     .all-blogs {
         display: grid;
         grid-template-columns: repeat(1, 0fr);
+    }
+
+    .view {
+        display: none;
     }
 
     footer {
@@ -333,20 +368,53 @@ footer {
         width: 80%;
     }
 
+    @keyframes slider {
+        0% {
+
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+
+            left: 20px;
+            top: 0px;
+        }
+
+        50% {
+
+            left: 40px;
+            top: 75px;
+        }
+
+        75% {
+
+            left: 60px;
+            top: 0px;
+        }
+
+        100% {
+
+            left: 80px;
+            top: 0px;
+        }
+    }
+
     .first-section {
         background-color: rgb(4, 35, 35);
         width: 100%;
+        height: 385px;
     }
 
     .half-width {
         height: 80%;
     }
 
-    .Fifa h1 {
+    .Fifa-title {
 
         font-family: 'Poppins', sans-serif;
         font-size: 25px;
-        font-weight: 700;
+        font-weight: 100;
         font-style: unset;
         margin-bottom: 0px;
     }
@@ -354,7 +422,7 @@ footer {
     .Fifa-info {
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .half-width img {
@@ -435,4 +503,11 @@ footer {
     }
 
 
+}
+
+/* ----------media Query for desktop------------ */
+@media only screen and (min-width:912px) {
+    .view {
+        display: none;
+    }
 }

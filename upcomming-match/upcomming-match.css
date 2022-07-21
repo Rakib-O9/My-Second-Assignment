@@ -9,45 +9,91 @@ body {
 }
 
 main {
+    margin-top: 30px;
     width: 1000px;
     margin: 0 auto;
 
 }
 
 .first-section {
-    background-color: rgb(11, 42, 43);
+    width: 100%;
+    background-color: rgb(2, 34, 34);
     border-radius: 20px;
 }
 
-.trophy img {
-    height: 100px;
-    width: 100px;
-    margin: 10px 10px 0px 10px;
-    padding-bottom: 0px;
-    border-radius: 50px;
+/* ----Foot ball Animation Style-------- */
+
+/* Key Frame for football animaton */
+@keyframes slider {
+    0% {
+
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+
+        left: 20px;
+        top: 0px;
+    }
+
+    50% {
+
+        left: 40px;
+        top: 120px;
+    }
+
+    75% {
+
+        left: 60px;
+        top: 0px;
+    }
+
+    100% {
+
+        left: 80px;
+        top: 0px;
+    }
+}
+
+/* ......Key frame end....... */
+
+.football {
+    width: 80px;
+    height: 50px;
+}
+
+.football img {
+    height: 70px;
+    width: 40px;
+    border-radius: 35px;
+    animation: slider 2s ease-in 0s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+    border-radius: 50px 40px;
 }
 
 .section-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 8px;
-    justify-content: space-between;
     align-items: center;
-    height: 360px;
+    height: 450px;
+    padding-left: 20px;
     margin-bottom: 30px;
+
+
 }
 
 .half-width {
-    width: 90%;
-    height: 108%;
-
-    padding-left: 55px;
+    width: 100%;
 
 }
 
 .half-width img {
-    width: 78%;
-    height: 93.8%;
+    width: 82.3%;
+    height: 100%;
+    padding: 0px;
 }
 
 .Fifa {
@@ -123,6 +169,8 @@ main {
 .side-nav a:hover {
     background-color: rgba(5, 128, 128, 0.955);
     color: white;
+    box-shadow: 2px 20px 10px rgba(8, 81, 95, 0.644);
+    border-bottom: 1px solid rgb(246, 234, 0);
 }
 
 /*------------------ Nav bar is end */
@@ -184,7 +232,24 @@ main {
     grid-row-gap: 4px;
 }
 
+.view {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.view a {
+    width: 500px;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-image: linear-gradient(rgb(8, 172, 155), #0a6d72, rgb(1, 41, 45));
+    box-shadow: 2px 20px 10px rgba(8, 81, 95, 0.644);
+    color: white;
+    font-size: 16px;
+}
+
 footer {
+
     background-color: black;
     width: 100%;
     height: 300px;
@@ -224,112 +289,46 @@ footer {
 
 
 /* -------------Media Query for Mobile---------------- */
-@media only screen and (max-width:600px) {
-    main {
-        width: 100%;
-    }
-
-    .first-section {
-        background-color: rgb(4, 35, 35);
-        width: 100%;
-    }
-
-    .section-details {
-        grid-template-columns: repeat(1, 0fr);
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .Fifa {
-        width: 100%;
-        height: 100%;
-    }
-
-    .half-width {
-        padding-left: 0px;
-        height: 100%;
-        width: 100%;
-    }
-
-    .second-section {
-        display: grid;
-        grid-template-columns: repeat(1, 0fr);
-        text-align: center;
-        justify-content: center;
-
-    }
-
-    .menu {
-        background-color: white;
-    }
-
-    .side-nav {
-        width: 100%;
-        text-align: center;
-
-    }
-
-    .side-nav a {
-        border: 1px solid black;
-    }
-
-    .all-blogs {
-        display: grid;
-        grid-template-columns: repeat(1, 0fr);
-    }
-
-    footer {
-        background-color: black;
-        width: 100%;
-        height: auto;
-    }
-
-    .fotter-section .contact a {
-        display: grid;
-        grid-template-rows: repeat(7, 0fr);
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    #icon {
-        display: grid;
-        grid-template-columns: repeat(4, 0fr);
-        justify-content: center;
-    }
-}
-
-/* -------------Media Query for Mobile---------------- */
 @media only screen and (max-width:688px) {
     main {
         width: 100%;
     }
 
+    /* Ffrist section media query */
     .first-section {
         background-color: rgb(4, 35, 35);
-        width: 100%;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .section-details {
         grid-template-columns: repeat(1, 0fr);
-        height: 100%;
+        height: 550px;
         width: 100%;
-        text-align: center;
         justify-content: center;
     }
 
     .Fifa {
-        width: 100%;
-        height: 100%;
+        width: 190px;
+        height: 90%;
+    }
+
+    .Fifa-title {
+        font-size: 20px;
     }
 
     .half-width {
         padding-left: 0px;
         height: 100%;
-        width: 100%;
+        width: 90%;
     }
 
+    .half-width img {
+        height: 250px;
+    }
+
+    /* second section media query start */
     .second-section {
         display: grid;
         grid-template-columns: repeat(1, 0fr);
@@ -355,6 +354,10 @@ footer {
     .all-blogs {
         display: grid;
         grid-template-columns: repeat(1, 0fr);
+    }
+
+    .view {
+        display: none;
     }
 
     footer {
@@ -383,9 +386,45 @@ footer {
         width: 80%;
     }
 
+    /*............... Media Query for slider ..............*/
+    @keyframes slider {
+        0% {
+
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+
+            left: 20px;
+            top: 0px;
+        }
+
+        50% {
+
+            left: 40px;
+            top: 75px;
+        }
+
+        75% {
+
+            left: 60px;
+            top: 0px;
+        }
+
+        100% {
+
+            left: 80px;
+            top: 0px;
+        }
+    }
+
+    /*..................... End Slider Query............ */
+
     .first-section {
         background-color: rgb(4, 35, 35);
         width: 100%;
+        height: 385px;
     }
 
     .half-width {
@@ -404,7 +443,7 @@ footer {
     .Fifa-info {
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .half-width img {
@@ -470,8 +509,6 @@ footer {
         height: auto;
     }
 
-    .contac {}
-
     .fotter-section .contact a {
         justify-content: space-between;
         text-align: center;
@@ -485,4 +522,11 @@ footer {
     }
 
 
+}
+
+/* ----------media Query for desktop------------ */
+@media only screen and (min-width:912px) {
+    .view {
+        display: none;
+    }
 }
