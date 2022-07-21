@@ -299,3 +299,190 @@ footer {
         justify-content: center;
     }
 }
+
+/* -------------Media Query for Mobile---------------- */
+@media only screen and (max-width:688px) {
+    main {
+        width: 100%;
+    }
+
+    .first-section {
+        background-color: rgb(4, 35, 35);
+        width: 100%;
+    }
+
+    .section-details {
+        grid-template-columns: repeat(1, 0fr);
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .Fifa {
+        width: 100%;
+        height: 100%;
+    }
+
+    .half-width {
+        padding-left: 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(1, 0fr);
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .menu {
+        background-color: white;
+    }
+
+    .side-nav {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .side-nav a {
+        border: 1px solid black;
+    }
+
+    .all-blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 0fr);
+    }
+
+    footer {
+        background-color: black;
+        width: 100%;
+        height: auto;
+    }
+
+    .fotter-section .contact a {
+        display: grid;
+        grid-template-rows: repeat(7, 0fr);
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #icon {
+        display: grid;
+        grid-template-columns: repeat(4, 0fr);
+        justify-content: center;
+    }
+}
+
+/* -------------Media Query for Tablet ---------------- */
+@media only screen and (min-width:688px) and (max-width:912px) {
+    main {
+        width: 80%;
+    }
+
+    .first-section {
+        background-color: rgb(4, 35, 35);
+        width: 100%;
+    }
+
+    .half-width {
+        height: 80%;
+    }
+
+    .Fifa h1 {
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        font-style: unset;
+        margin-bottom: 0px;
+    }
+
+    .Fifa-info {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 8px;
+    }
+
+    .half-width img {
+
+        width: 80%;
+        height: 80%;
+    }
+
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(1, 0fr);
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .menu {
+
+        background-color: white;
+        height: 100px;
+
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+    .side-nav {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .side-nav a {
+        margin: 2px;
+        border: 1px solid black;
+    }
+
+
+    .all-blogs {
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .blog p {
+        margin: 3px;
+        text-align: left;
+
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    footer {
+        background-color: black;
+        width: 100%;
+        height: auto;
+    }
+
+    .contac {}
+
+    .fotter-section .contact a {
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #icon {
+        display: grid;
+        grid-template-columns: repeat(4, 0fr);
+        justify-content: center;
+    }
+
+
+}

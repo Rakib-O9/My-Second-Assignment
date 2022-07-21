@@ -16,6 +16,7 @@ main {
 }
 
 .first-section {
+    width: 100%;
     background-color: rgb(2, 34, 34);
     border-radius: 20px;
 }
@@ -74,11 +75,9 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 8px;
-    justify-content: space-between;
     align-items: center;
-
     height: 450px;
-    padding-top: 20px;
+    padding-left: 20px;
     margin-bottom: 30px;
 
 
@@ -86,15 +85,14 @@ main {
 
 .half-width {
     width: 100%;
-
-    padding: 20px;
-    padding-left: 55px;
+    /* padding-left: 55px; */
 
 }
 
 .half-width img {
     width: 82.3%;
     height: 100%;
+    padding: 0px;
 }
 
 .Fifa {
@@ -252,7 +250,7 @@ footer {
 }
 
 /* -------------Media Query for Mobile---------------- */
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:688px) {
     main {
         width: 100%;
     }
@@ -326,4 +324,115 @@ footer {
         grid-template-columns: repeat(4, 0fr);
         justify-content: center;
     }
+}
+
+
+/* -------------Media Query for Tablet ---------------- */
+@media only screen and (min-width:688px) and (max-width:912px) {
+    main {
+        width: 80%;
+    }
+
+    .first-section {
+        background-color: rgb(4, 35, 35);
+        width: 100%;
+    }
+
+    .half-width {
+        height: 80%;
+    }
+
+    .Fifa h1 {
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        font-style: unset;
+        margin-bottom: 0px;
+    }
+
+    .Fifa-info {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 8px;
+    }
+
+    .half-width img {
+
+        width: 80%;
+        height: 80%;
+    }
+
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(1, 0fr);
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .menu {
+
+        background-color: white;
+        height: 100px;
+
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+    .side-nav {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .side-nav a {
+        margin: 2px;
+        border: 1px solid black;
+    }
+
+
+    .all-blogs {
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .blog p {
+        margin: 3px;
+        text-align: left;
+
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    footer {
+        background-color: black;
+        width: 100%;
+        height: auto;
+    }
+
+    .contac {}
+
+    .fotter-section .contact a {
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #icon {
+        display: grid;
+        grid-template-columns: repeat(4, 0fr);
+        justify-content: center;
+    }
+
+
 }
