@@ -77,8 +77,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 8px;
-    align-items: center;
-    height: 450px;
+    text-align: center;
+    height: 455px;
     padding-left: 20px;
     margin-bottom: 30px;
 
@@ -91,7 +91,7 @@ main {
 }
 
 .half-width img {
-    width: 82.3%;
+    width: 88%;
     height: 100%;
     padding: 0px;
 }
@@ -288,7 +288,9 @@ footer {
 
 
 
-/* -------------Media Query for Mobile---------------- */
+/* ------------
+                   Media Query for Mobile
+--------------- */
 @media only screen and (max-width:688px) {
     main {
         width: 100%;
@@ -380,7 +382,10 @@ footer {
     }
 }
 
-/* -------------Media Query for Tablet ---------------- */
+/* -------------
+Media Query for Tablet
+---------------- */
+
 @media only screen and (min-width:688px) and (max-width:912px) {
     main {
         width: 80%;
@@ -394,7 +399,7 @@ footer {
             top: 0px;
         }
 
-        25% {
+        /* 25% {
 
             left: 20px;
             top: 0px;
@@ -403,14 +408,14 @@ footer {
         50% {
 
             left: 40px;
-            top: 75px;
+            top: 72px;
         }
 
         75% {
 
             left: 60px;
             top: 0px;
-        }
+        } */
 
         100% {
 
@@ -428,8 +433,11 @@ footer {
     }
 
     .half-width {
-        height: 80%;
+
+        height: 74%;
     }
+
+
 
     .Fifa h1 {
 
@@ -449,7 +457,7 @@ footer {
     .half-width img {
 
         width: 80%;
-        height: 80%;
+        height: 99%;
     }
 
     .second-section {
